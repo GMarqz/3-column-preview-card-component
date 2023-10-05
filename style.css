@@ -92,25 +92,26 @@ p {
 .content__suvs a,
 .content__luxury a {
     display: inline-block;
-    width: 9.125rem;
+    min-width: 9.125rem;
     height: 3rem;
     margin: 1.56rem 8.25rem 3rem 3.03rem;
+    padding: auto;
     border: none;
     border-radius: 1.5625rem;
-    padding: 0.69rem 1.97rem 0.75rem 1.97rem;
     text-align: center;
 
 
     text-decoration: none;
+    font-family: var(--text-font);
     background-color: var(--button-background-color);
     color: inherit;
-    line-height: 1.5625rem;
+    line-height: 3rem;
 }
 
 a:active {
     background-color: inherit;
     color: var(--white);
-    border: 2px solid var(--white);
+    border: 0.125rem solid var(--white);
 }
 
 @media screen and (min-width: 1440px) {
@@ -134,15 +135,19 @@ a:active {
         border-radius: 0 0.5rem 0.5rem 0;
     }
 
+    p {
+        margin-bottom: 4rem;
+    }
+
     a {
-        margin: 5.19rem 7.06rem 3rem 3rem;
+        margin: 0 7.06rem 3rem 3rem;
         transition: background-color 0.3s;
     }
 
     a:hover, a:active {
         background-color: inherit;
         color: var(--white);
-        border: 2px solid var(--white);
+        border: 0.125rem solid var(--white);
         cursor: pointer; 
     }
 }
