@@ -13,6 +13,7 @@
     --very-light-gray: hsla(0, 0%, 100%, 0.75);
     --paragraph-color: hsl(0, 0%, 95%);
     --button-background-color: #f2f2f2;
+    --white: #ffffff;
 }
 
 * {
@@ -104,3 +105,34 @@ p {
 
 }
 
+button:active {
+    background-color: inherit;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 10.6875em 16.25em auto 16.25em;
+    }
+    .content__sedan {
+        border-radius: 8px 0 0 8px;
+    }
+    
+    .content__luxury {
+        border-radius: 0 8px 8px 0;
+    }
+
+    button {
+
+        transition: background-color 0.3s;
+    }
+
+    button:hover, button:active {
+        background-color: inherit;
+        color: var(--white);
+        border: 2px solid var(--white);
+    }
+}
