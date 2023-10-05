@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Version](/images/screenshot.png)
+![Desktop Version](/images/Screenshot-2023-10-05-at-18-47-26-Frontend-Mentor-3-column-preview-card-component.png)
 
 ### Links
 
