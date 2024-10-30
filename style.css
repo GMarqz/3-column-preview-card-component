@@ -1,5 +1,4 @@
 @import url(/reset.css);
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 :root {
@@ -33,15 +32,17 @@ main {
     display: flex;
     padding: 5.5rem 1.5rem;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .content__sedan,
 .content__suvs,
 .content__luxury {
-   width: 20.4375rem;
-   height: 27.635rem;
+   max-width: 90%;
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.563rem;
 }
 
 .content__sedan {
@@ -64,14 +65,10 @@ main {
 }
 
 img {
-    margin: 3rem 13.4rem 0 3.06rem;
     align-self: flex-start;
 }
 
 h1 {
-    width: 6.1875rem;
-    height: 3rem;
-    margin: 2.19rem 11.19rem 0 3.06rem;
     font-family: var(--heading-font);
     font-size: 2.5rem;
     color: var(--very-light-gray);
@@ -81,7 +78,6 @@ h1 {
 p {
     width: 14.4375rem;
     height: 7.8125rem;
-    margin: 1.56rem 2.97rem 0 3.03rem;
     font-family: var(--text-font);
     color: var(--paragraph-color);
     line-height: 1.5625rem;
@@ -91,15 +87,11 @@ p {
 .content__sedan a,
 .content__suvs a,
 .content__luxury a {
-    display: inline-block;
-    min-width: 9.125rem;
-    height: 3rem;
-    margin: 1.56rem 8.25rem 3rem 3.03rem;
-    padding: auto;
+    /* max-width: 9.125rem; */
+    width: 63%;
     border: none;
     border-radius: 1.5625rem;
     text-align: center;
-
 
     text-decoration: none;
     font-family: var(--text-font);
@@ -116,9 +108,10 @@ a:active {
 
 @media screen and (min-width: 1440px) {
     main{
+        padding: 10.688rem 16.25rem 8.063rem 16.24rem;
         display: flex;
         flex-direction: row;
-        margin: 10.6875em 16.25em 8.06rem 16.25em;
+        justify-content: center;
     }
 
     .content__sedan,
@@ -140,7 +133,9 @@ a:active {
     }
 
     a {
-        margin: 0 7.06rem 3rem 3rem;
+        /* align-self: self-start;
+        justify-self: self-end; */
+
         transition: background-color 0.3s;
     }
 
